@@ -41,5 +41,5 @@
 
   roles:
     - role: geerlingguy.pip
-    - role: geerlingguy.docker
+    - role: geerlingguy.containerd
     - role: geerlingguy.kubernetes

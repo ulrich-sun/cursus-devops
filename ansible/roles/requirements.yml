@@ -13,5 +13,8 @@
 # Install jenkins
 - src: geerlingguy.jenkins
 
+# Install containerd-cri
+- src: geerlingguy.containerd
+
 # Install kubenretes
 - src: geerlingguy.kubernetes
