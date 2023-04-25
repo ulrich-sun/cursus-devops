@@ -37,6 +37,13 @@
     yum:
       name: epel-release
       state: installed
+      
+  - name: Enable br_netfilter module
+    modprobe:
+      name: br_netfilter
+      state: present
+    when: >
+      ansible_distribution != 'Debian' 
 
 
   roles:
