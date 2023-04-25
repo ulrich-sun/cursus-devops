@@ -42,7 +42,9 @@
       state: present
     when: >
       ansible_distribution != 'Debian' 
-
+  - name: Print version
+    debug:
+      msg: "Kubernetes version: {{ kubernetes_version }}"
 
   roles:
     - role: geerlingguy.pip
