@@ -2,8 +2,6 @@
   become: true
 
   vars:
-    pip_install_packages:
-      - name: docker
     token: "783bde.3f89s0fje9f38fhf"
     # The follow two parameter was explained here https://github.com/geerlingguy/ansible-role-kubernetes#variables-to-configure-kubeadm-and-kubelet-through-command-line-options
     kubernetes_kubelet_extra_args: "--fail-swap-on=false --node-ip={{ ansible_enp0s8.ipv4.address }}"
